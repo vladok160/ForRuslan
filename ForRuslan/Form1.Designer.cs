@@ -45,12 +45,10 @@
             this.xMin = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.X0 = new System.Windows.Forms.TextBox();
             this.X1 = new System.Windows.Forms.TextBox();
             this.E = new System.Windows.Forms.TextBox();
-            this.C0 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.GraphF)).BeginInit();
             this.SuspendLayout();
             // 
@@ -190,15 +188,6 @@
             this.label10.TabIndex = 13;
             this.label10.Text = "X1 - ";
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(22, 245);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(32, 15);
-            this.label11.TabIndex = 15;
-            this.label11.Text = "C0 - ";
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -232,23 +221,14 @@
             this.E.TabIndex = 18;
             this.E.Text = "0,001";
             // 
-            // C0
-            // 
-            this.C0.Location = new System.Drawing.Point(60, 237);
-            this.C0.Name = "C0";
-            this.C0.Size = new System.Drawing.Size(100, 23);
-            this.C0.TabIndex = 19;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(733, 398);
-            this.Controls.Add(this.C0);
             this.Controls.Add(this.E);
             this.Controls.Add(this.X1);
             this.Controls.Add(this.X0);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -289,11 +269,9 @@
         private Label xMin;
         private Label label9;
         private Label label10;
-        private Label label11;
         private Label label12;
         private TextBox X0;
         private TextBox X1;
         private TextBox E;
-        private TextBox C0;
     }
 }

@@ -21,27 +21,19 @@ namespace ForRuslan
 
         private void MethodOfUnevenCoatings_Click(object sender, EventArgs e)
         {
-            if (C0.Text == "")
-            {
-                MessageBox.Show("Для этого метода требуется заполнить поле C0", "Ошибка");
-            }
-            else
-            {
-                Methods methods = new Methods(
-                    Convert.ToDouble(X0.Text),
-                    Convert.ToDouble(X1.Text),
-                    Convert.ToDouble(E.Text),
-                    Convert.ToDouble(C0.Text));
-                xMin.Text = Convert.ToString(methods.ForX());
-                yMin.Text = Convert.ToString(methods.ForF());
-                Iter.Text = Convert.ToString(methods.GetIterations());
-                Time.Text = Convert.ToString(methods.TimeOfDoing());
-            }
+            Methods methods = new Methods(
+                Convert.ToDouble(X0.Text),
+                Convert.ToDouble(X1.Text),
+                Convert.ToDouble(E.Text),
+                Convert.ToDouble(1));
+            xMin.Text = Convert.ToString(methods.ForX());
+            yMin.Text = Convert.ToString(methods.ForF());
+            Iter.Text = Convert.ToString(methods.GetIterations());
+            Time.Text = Convert.ToString(methods.TimeOfDoing());
         }
 
         private void BruteForceMethod_Click(object sender, EventArgs e)
         {
-            C0.Text = "";
             Methods methods = new Methods(
                 Convert.ToDouble(X0.Text),
                 Convert.ToDouble(X1.Text),
